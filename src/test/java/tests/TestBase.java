@@ -25,6 +25,9 @@ public class TestBase {
     @AfterEach
     public void tearDrop(){
         Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
     }
 
 }
