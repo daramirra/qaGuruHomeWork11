@@ -1,1 +1,2 @@
-# qaGuruHomeWork#10
+# qaGuruHomeWork10
+Домашнее задание #10.
