@@ -39,6 +39,7 @@ tasks.withType(JavaCompile) {
 }
 
 tasks.withType(Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform()
 
     testLogging {
@@ -54,4 +55,6 @@ task smoke(type: Test) {
     useJUnitPlatform {
         includeTags 'smoke'
     }
+
+
 }
