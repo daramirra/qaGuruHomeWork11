@@ -24,12 +24,11 @@ public class TestBase {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.startMaximized = true;
         Configuration.remote = getSelenoidUrl();
-        System.out.println(getSelenoidUrl());
     }
 
     private static String getSelenoidUrl() {
         SelenoidCredentials credentials = ConfigFactory.create(SelenoidCredentials.class);
-        return "https://" + credentials.login() + ":" + credentials.password() + "@" +System.getProperty("selenoidUrl");
+        return "https://" + credentials.login() + ":" + credentials.password() + "@" + System.getProperty("selenoidUrl");
     }
 
     @AfterEach
